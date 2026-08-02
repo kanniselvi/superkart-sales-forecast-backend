@@ -16,3 +16,9 @@ EXPOSE 5000
 
 # Run Flask app
 CMD ["python", "app.py"]
+
+# Build image
+docker build -t superkart-backend .
+
+# Run container
+docker run -p 5000:5000 superkart-backend
